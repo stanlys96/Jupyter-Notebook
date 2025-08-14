@@ -68,3 +68,8 @@ id,time,learning,certification,course,course_name,platform,total_learning_materi
            Most databases contain special datatypes for dates and times. Date = YYYYMMDD, time = HHMMSS, timestamp = YYYYXXDDHHMMSSZZZZZZ
            There are also a variety of date functions. We can get the values from a date type data with DAY, MONTH and YEAR. We can also get the date difference with DATE_ADD, DATE_SUB, DATE_DIFF and FROM_DAYS. 
            ",IBM Data Science,6,Databases and SQL for Data Science with Python,Coursera,3,3,"""Built-in Database Functions""; ""Date and Time Built-in Functions""; ""Hands-on Lab: Built-in functions"""
+26,2025-08-14 19:33:00,"Learned about string patterns, sorting and grouping. Also learned about sub-queries and nested selects. 
+           Some aggregate functions can't be used as is, for example SELECT * FROM Employees WHERE Salary < AVG(Salary). This will throw an error.
+           Instead, we should use this SELECT * FROM Employees WHERE Salary < (SELECT AVG(Salary) FROM Employees) AS Salary;
+           We can also use queries to work with multiple tables. For example, SELECT * FROM Employees, Departments; SELECT * FROM Employees E, Departments D WHERE E.Dep_Id = D.Dep_Id_Dep;
+           ",IBM Data Science,6,Databases and SQL for Data Science with Python,Coursera,4,3,"""Hands-on Lab: String Patterns, Sorting and Grouping""; ""Sub-Queries and Nested Selects""; ""Hands-on Lab: Sub-queries and Nested Selects""; ""Working with Multiple Tables"""
