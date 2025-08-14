@@ -73,3 +73,7 @@ id,time,learning,certification,course,course_name,platform,total_learning_materi
            Instead, we should use this SELECT * FROM Employees WHERE Salary < (SELECT AVG(Salary) FROM Employees) AS Salary;
            We can also use queries to work with multiple tables. For example, SELECT * FROM Employees, Departments; SELECT * FROM Employees E, Departments D WHERE E.Dep_Id = D.Dep_Id_Dep;
            ",IBM Data Science,6,Databases and SQL for Data Science with Python,Coursera,4,3,"""Hands-on Lab: String Patterns, Sorting and Grouping""; ""Sub-Queries and Nested Selects""; ""Hands-on Lab: Sub-queries and Nested Selects""; ""Working with Multiple Tables"""
+27,2025-08-14 20:44:00,"Learned about working with multiple tables in SQL queries. Examples include: SELECT JOB_TITLE, MIN_SALARY, MAX_SALARY, JOB_IDENT FROM JOBS WHERE JOB_IDENT IN (SELECT JOB_ID FROM EMPLOYEES WHERE YEAR(B_DATE) > 1976);
+           SELECT J.JOB_TITLE, J.MIN_SALARY, J.MAX_SALARY, J.JOB_IDENT FROM JOBS J, EMPLOYEES E WHERE E.JOB_ID = J.JOB_IDENT AND YEAR(E.B_DATE) > 1976;
+           Also learned that Python supports access to databases, including database querying.
+           ",IBM Data Science,6,Databases and SQL for Data Science with Python,Coursera,4,"(3, 4)","""Hands-on Lab: Working with Multiple Tables""; ""Practice Quiz: Functions, Multiple Tables, and Sub-queries""; ""Graded Quiz: Functions, Multiple Tables, and Sub-queries"", ""How to Access Databases Using Python"""
